@@ -1,0 +1,45 @@
+Removing the insecure package
+
+Every newly created Meteor project has the insecure package installed by default. This package allows us to edit the database from the client as we said above, which is useful for quick prototyping.
+
+We need to remove it, because as the name suggests it is insecure.
+
+meteor remove insecure
+
+Now our app changes don’t work anymore as we have revoked all client-side database permissions. If we try to insert a new contact for example, we are going to see insert failed: Access denied in our browser console.
+
+Removing the autopublish package
+
+Just like with insecure package, all new Meteor apps start with the autopublish package, which automatically synchronizes all the database contents to the client. So we should remove it:
+
+meteor remove autopublish
+
+When the app refreshes, the contacts list will be empty. Without the autopublish package, we will have to specify explicitly what the server sends to the client. The functions in Meteor that do this are Meteor.publish and Meteor.subscribe.
+
+In the next lessons, we are going to learn how to properly insert and fetch contacts from our database.
+
+Follow the same steps you watched! 
+
+    Create a new component to show an error alert using TailwindCSS and use it instead of the native JavaScript alert.
+    Remember to install the @heroicons/react package.
+    Create a new component to show a success alert using TailwindCSS and present it when a contact is inserted.
+    Add a new attribute to the contact called createdAt in your method to save the date of the insertion. On the client side, change the find query to sort the contacts by the createdAt attribute.
+    Add a timeout to hide the error and success alerts after a few seconds.
+    To keep your code clean, refactor your code creating two new functions to show an error and another one to show a success message.
+    You can check our repository with the final code.
+
+
+After that you can go to the next lesson!
+
+Follow the same steps you watched! 
+
+    Add a new element to the contacts list with a link to remove a contact.
+    Create a new Meteor method called contacts.remove to remove a contact by id.
+    Create a new function that it will be called by the remove link and it will call the new Meteor method.
+    Handle the method response to present an error or a success message.
+    Import and use the check function to validate the type of the arguments you are receiving on the insert and remove methods.
+    You can check our repository with the final code.
+    Commit and push your code to trigger a new deploy on Galaxy!
+
+
+After that you can go to the next lesson!
