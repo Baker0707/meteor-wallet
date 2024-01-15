@@ -43,3 +43,54 @@ Follow the same steps you watched!
 
 
 After that you can go to the next lesson!
+
+
+https://uiverse.io/forms
+
+Open-Source UI elements for any project
+
+https://dev.to/
+
+DEV Community is a community of 1,236,140 amazing developers
+
+https://codepen.io/pen/tour/welcome/start
+
+Meteor uses Git for version control, but it doesn't have its own set of specific Git commands. Instead, you use the standard Git commands within your Meteor project directory. Here are some common Git commands that you might use in a Meteor project:
+
+Initialize a Git Repository:
+
+git init: Initializes a new Git repository in your project directory.
+Check Repository Status:
+
+git status: Shows the status of changes as untracked, modified, or staged.
+Add Files to Staging Area:
+
+git add <filename>: Adds a specific file to the staging area.
+git add . or git add -A: Adds all changes to the staging area.
+Commit Changes:
+
+git commit -m "Your commit message": Commits staged changes with a descriptive message.
+View Commit History:
+
+git log: Displays the commit history.
+Create a Branch:
+
+git branch <branch-name>: Creates a new branch.
+git checkout -b <branch-name>: Creates a new branch and switches to it.
+Switch Branch:
+
+git checkout <branch-name>: Switches to an existing branch.
+Merge Branches:
+
+git merge <branch-name>: Merges changes from one branch into the current branch.
+Fetch Latest Changes from a Remote Repository:
+
+git fetch: Retrieves changes from the remote repository.
+git pull: Fetches changes and merges them into the current branch.
+Push Changes to a Remote Repository:
+
+git push origin <branch-name>: Pushes changes to a specific branch on the remote repository.
+Clone a Repository:
+
+git clone <repository-url>: Clones a remote repository to your local machine.
+
